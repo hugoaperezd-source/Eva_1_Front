@@ -1,0 +1,81 @@
+/* ============================
+ RESET Y BASE
+ ============================ */
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+/*trabajar con Felxbox*/
+.contenedor {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #42a3bb;
+    padding: 10px;
+    gap: 25px;
+    height: 300px;
+}
+.saira-nav{
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #497ddf;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.logo img {
+    height: 100px; 
+    width: auto;
+     object-fit: contain;
+}
+
+.nav-links a {
+    display: inline-block;   
+    margin-right: 15px;     
+    text-decoration: none;   
+    color: rgb(255, 255, 255);       
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #007BFF, #00CFFF);
+  padding: 20px;
+  color: white;
+}
+
+.banner .info {
+  max-width: 70%;
+}
+
+.banner .icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
