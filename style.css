@@ -1,81 +1,231 @@
-/* ============================
- RESET Y BASE
- ============================ */
-*, *::before, *::after {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
-}
-/*trabajar con Felxbox*/
-.contenedor {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #42a3bb;
-    padding: 10px;
-    gap: 25px;
-    height: 300px;
-}
-.saira-nav{
-  font-family: "Saira", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar{
+body {
+
+    background: linear-gradient(135deg, #1b3a5f 0%, #29608f 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* =========================================
+   HEADER Y NAVEGACIÓN
+========================================= */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #497ddf;
-    color: white;
+    padding: 25px 8%;
+    background-color: transparent;
 }
 
-.logo {
+.logo-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 24px; 
+    gap: 15px;
+}
+
+.logo-icon {
+    background-color: #e67e22; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.logo img {
-    height: 100px; 
-    width: auto;
-     object-fit: contain;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-.nav-links a {
-    display: inline-block;   
-    margin-right: 15px;     
-    text-decoration: none;   
-    color: rgb(255, 255, 255);       
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-.nav-links {
+nav a:hover {
+    color: #e67e22; 
+}
+
+/* =========================================
+   SECCIÓN HERO (PRESENTACIÓN)
+========================================= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 50px;
+}
+
+.hero-texto {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-texto h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-texto h1 span {
+    color: #e67e22; /* Texto en Naranja */
+}
+
+.hero-texto h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.hero-texto em {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagen img {
+    border-radius: 50%;
+    background-color: #ccc; 
+    border: 12px solid rgba(255, 255, 255, 0.15); 
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   SECCIÓN SOBRE MÍ (COMMIT 2)
+========================================= */
+.sobre-mi {
+    padding: 80px 8%;
+    background-color: #f8f9fa; 
+    color: #333;
+}
+
+/* Título de la sección */
+.seccion-header {
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #007BFF, #00CFFF);
-  padding: 20px;
-  color: white;
+.seccion-header h2 {
+    font-size: 2.5rem;
+    color: #1b3a5f; 
+    display: inline-block;
 }
 
-.banner .info {
-  max-width: 70%;
+/* Línea naranja debajo del título */
+.seccion-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e67e22; 
+    margin: 8px auto 0;
+    border-radius: 2px;
 }
 
-.banner .icon img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.seccion-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 15px;
 }
 
+/* Contenedor Flex para las dos columnas */
+.sobre-mi-contenido {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+.sobre-mi-contenido article {
+    flex: 2; 
+}
+
+.sobre-mi-contenido article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #4a5568;
+}
+
+.sobre-mi-contenido article blockquote {
+    background-color: #fbf6f0; 
+    border-left: 4px solid #e67e22; 
+    padding: 20px;
+    font-style: italic;
+    color: #4a5568;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+/* Lado Derecho: Tarjeta de Datos Personales (Aside) */
+.card-datos {
+    flex: 1; /* Toma menos espacio */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave */
+    min-width: 300px;
+}
+
+.card-datos h3 {
+    color: #1b3a5f;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.card-datos ul {
+    list-style: none;
+}
+
+.card-datos li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0; /* Línea separadora gris claro */
+    color: #4a5568;
+}
+
+.card-datos li:last-child {
+    border-bottom: none; /* Quita la línea del último elemento */
+}
+
+.card-datos strong {
+    color: #1b3a5f; /* Destaca las etiquetas en azul oscuro */
+}
+
+/* Adaptación para pantallas más pequeñas (Responsive básico) */
+@media (max-width: 768px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+    .card-datos {
+        width: 100%;
+    }
+}

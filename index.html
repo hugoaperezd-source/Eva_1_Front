@@ -3,38 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Pérez</title>
+    <title>Portafolio | Hugo Pérez</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar saira-nav">
-       
-        <div class="logo">
-    <img src="Logo.png" alt="Logo de Hugo Pérez">
-    <span>Hugo Pérez</span>
-</div>
-        <div class="nav-links">
-            <a href="#">Sobre Mi</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contactos</a>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">HP</div>
+            <span class="logo-text">Hugo Pérez</span>
         </div>
-    </nav>
-<div class="banner">
-  <div class="info">
-    <h1>Hola, Hugo Pérez</h1>
-    <p>Estudiante de Desarrollo Web</p>
-    <p>Apasionado por crear experiencias web modernas y accesibles.</p>
-    <p>Actualmente cursando la carrera de Programación en el Instituto Profecional Inacap.</p>
-  </div>
-  <div class="icon">
-    <img src="usuario.avif" alt="Icono usuario">
-  </div>
-</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <h1>Hola, soy <span>Hugo Pérez</span></h1>
+                <h2>Estudiante de Analista Programador</h2>
+                <p><em>Apasionado por crear experiencias web modernas y bases de datos eficientes.</em><br>
+                Actualmente cursando la carrera de Informática en INACAP.</p>
+            </div>
+            
+            <div class="hero-imagen">
+                <img src="usuario.avif" alt="Foto de Hugo Pérez" width="250" height="250">
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="sobre-mi">
+    <div class="seccion-header">
+        <h2>Sobre Mí</h2>
+        <p>Conóceme un poco más</p>
+    </div>
+
+    <div class="sobre-mi-contenido">
+        <article>
+            <p><strong>Mi nombre es Hugo Pérez</strong> y soy estudiante de Ingeniería en Informática. Desde que descubrí la programación, me apasiona crear sitios web e interfaces que sean tanto funcionales como estéticamente agradables.</p>
+            
+            <p>Actualmente me encuentro <em>aprendiendo HTML5, CSS y JavaScript</em>, con el objetivo de convertirme en un desarrollador front-end profesional. Me gusta trabajar en equipo y aprender nuevas tecnologías.</p>
+            
+            <blockquote>
+                «El único modo de hacer un gran trabajo es amar lo que haces.» — Steve Jobs
+            </blockquote>
+        </article>
+
+        <aside class="card-datos">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li><strong>Edad:</strong> 19 años</li>
+                <li><strong>Ciudad:</strong> Cauquenes, Chile</li>
+                <li><strong>Email:</strong> hugo.perez21@inacapmail.cl</li>
+                <li><strong>Carrera:</strong> Analista Programador</li>
+                <li><strong>Intereses:</strong> Python, Hardware, Gaming</li>
+            </ul>
+        </aside>
+    </div>
+</section>
+    </main>
 
 </body>
-
 </html>
