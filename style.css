@@ -672,3 +672,148 @@ nav a:hover {
     color: #a0aec0;
 }
 
+/* =========================================
+   DISEÑO RESPONSIVO (COMMIT 7)
+========================================= */
+
+/* Tablet y Móviles grandes (max-width: 768px) */
+@media (max-width: 768px) {
+    .contacto-contenedor {
+        flex-direction: column; /* Apila el formulario y la tarjeta */
+    }
+
+    .form-fila {
+        flex-direction: column; /* Apila nombre y correo */
+        gap: 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+}
+
+/* Móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-texto h1 { font-size: 2.5rem; }
+    
+    header { flex-direction: column; padding: 20px 5%; }
+    
+    header nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* =========================================
+   DISEÑO RESPONSIVO (COMMIT 7)
+========================================= */
+
+/* --- TABLET (max-width: 768px) --- */
+
+@media (max-width: 768px) {
+    
+    
+    section {
+        padding: 60px 5%;
+    }
+
+    
+    header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+    
+    .card-datos {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+   
+    .listas-contenedor {
+        flex-direction: column;
+    }
+
+    
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+
+    
+    .form-fila {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+  
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+}
+
+/* --- MÓVIL (max-width: 480px) --- */
+
+@media (max-width: 480px) {
+    
+    
+    .hero-texto h1 { 
+        font-size: 2.2rem; 
+    }
+    
+    .hero-texto h2 {
+        font-size: 1.3rem;
+    }
+
+    .seccion-header h2 {
+        font-size: 2rem;
+    }
+
+   
+    .hero-imagen img {
+        width: 220px;
+        height: 220px;
+        border-width: 8px; 
+    }
+
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    
+    .tabla-contenedor {
+        overflow-x: auto; 
+    }
+}
