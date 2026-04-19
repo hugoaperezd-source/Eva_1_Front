@@ -28,7 +28,7 @@
             <div class="hero-texto">
                 <h1>Hola, soy <span>Hugo Pérez</span></h1>
                 <h2>Estudiante de Analista Programador</h2>
-                <p><em>Apasionado por crear experiencias web modernas y bases de datos eficientes.</em><br>
+                <p><em>Entusiasta por crear experiencias web modernas y bases de datos eficientes.</em><br>
                 Actualmente cursando la carrera de Informática en INACAP.</p>
             </div>
             
@@ -50,7 +50,7 @@
             <p>Actualmente me encuentro <em>aprendiendo HTML5, CSS y JavaScript</em>, con el objetivo de convertirme en un desarrollador front-end profesional. Me gusta trabajar en equipo y aprender nuevas tecnologías.</p>
             
             <blockquote>
-                «El único modo de hacer un gran trabajo es amar lo que haces.» — Steve Jobs
+                "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito." — Albert Schweitzer.
             </blockquote>
         </article>
 
@@ -176,12 +176,87 @@
                 <a href="#" target="_blank">Ver repositorio &rarr;</a>
             </figcaption>
         </figure>
-
-
     </div>
 </section>
+<section id="contacto" class="contacto">
+            <div class="seccion-header">
+                <h2>Contacto</h2>
+                <p>Envíame un mensaje</p>
+            </div>
 
+            <div class="contacto-contenedor">
+                <form action="#" method="POST" class="formulario">
+                    <div class="form-fila">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="colaboracion">Colaboración en proyecto</option>
+                            <option value="empleo">Oferta Laboral</option>
+                            <option value="consulta">Consulta General</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+
+                <aside class="info-contacto">
+                    <h3>Información de contacto</h3>
+                    <ul class="lista-contacto">
+                        <li>
+                            <div class="icono-contacto">✉</div>
+                            <span>hugo.perez21@inacapmail.cl</span>
+                        </li>
+                        <li>
+                            <div class="icono-contacto">📍</div>
+                            <span>Cauquenes, Chile</span>
+                        </li>
+                        <li>
+                            <div class="icono-contacto">📱</div>
+                            <span>+56 9 1234 5678</span>
+                        </li>
+                        <li>
+                            <div class="icono-contacto">🌐</div>
+                            <a href="https://github.com/hugoaperezd-source" target="_blank">github.com/hugo-perez</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
     </main>
-
+<footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <div class="logo-icon">HP</div>
+                <span>Hugo Pérez</span>
+            </div>
+            
+            <div class="footer-redes">
+                <a href="https://github.com/hugoaperezd-source" target="_blank">GH</a>
+                <a href="#" target="_blank">LI</a>
+                <a href="#" target="_blank">TW</a>
+                <a href="#" target="_blank">IG</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hugo Pérez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -481,3 +481,194 @@ nav a:hover {
 .card-proyecto a:hover {
     color: #e67e22; /* Cambia a naranja al pasar el mouse */
 }
+
+/* =========================================
+   SECCIÓN CONTACTO (COMMIT 5)
+========================================= */
+.contacto {
+    padding: 80px 8%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contacto-contenedor {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Formulario */
+.formulario {
+    flex: 2; /* Toma más espacio que la info de contacto */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-fila {
+    display: flex;
+    gap: 20px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-grupo label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1b3a5f;
+    font-size: 0.95rem;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+    font-family: inherit;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: #1b3a5f; /* Azul al enfocar */
+    background-color: #ffffff;
+}
+
+.btn-enviar {
+    background-color: #1b3a5f; /* Botón azul oscuro */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #29608f; /* Azul más claro al pasar el mouse */
+}
+
+/* Información de Contacto (Aside) */
+.info-contacto {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 35px;
+    border-radius: 12px;
+    min-width: 280px;
+}
+
+.info-contacto h3 {
+    color: #1b3a5f;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.lista-contacto {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista-contacto li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.icono-contacto {
+    background-color: #1b3a5f;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.lista-contacto a {
+    color: #29608f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lista-contacto a:hover {
+    color: #e67e22;
+}
+
+/* =========================================
+   FOOTER (COMMIT 5)
+========================================= */
+.footer {
+    background-color: #1b3a5f;
+    color: #ffffff;
+    padding: 40px 8% 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-redes a {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    text-decoration: none;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.footer-redes a:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #a0aec0;
+}
+
