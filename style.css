@@ -363,3 +363,121 @@ nav a:hover {
         flex-direction: column;
     }
 }
+
+
+/* =========================================
+   SECCIÓN PROYECTOS (COMMIT 4)
+========================================= */
+.proyectos {
+    padding: 80px 8%;
+    background-color: #f8f9fa;
+    text-align: center; /* Centra el título y subtítulo */
+}
+
+/* Estilos compartidos para los títulos de sección (si no los tenías) */
+.seccion-header h2 {
+    font-size: 2.5rem;
+    color: #1b3a5f; /* Azul oscuro */
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.seccion-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e67e22; /* Línea naranja */
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.seccion-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+/* --- REQUISITO: CSS GRID --- */
+.galeria-grid {
+    display: grid;
+    /* Crea columnas automáticas. Min 300px, Max lo que sobre */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left; /* Regresa el texto de las tarjetas a la izquierda */
+}
+
+/* --- TARJETAS (<figure>) --- */
+.card-proyecto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Contenedor simulado de imágenes y gradientes */
+.img-placeholder {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem; /* Tamaño de los iconos/emojis */
+}
+
+/* Clases específicas para los fondos (Cero estilos en línea) */
+.grad-1 { background: linear-gradient(135deg, #7b6bd1, #6250a5); } /* Morado */
+.grad-2 { background: linear-gradient(135deg, #ff8da1, #f95c80); } /* Rosa */
+.grad-3 { background: linear-gradient(135deg, #5de1fb, #1bc0e5); } /* Celeste */
+.grad-4 { background: linear-gradient(135deg, #4ef0a0, #2bc77d); } /* Verde */
+.grad-5 { background: linear-gradient(135deg, #ffb36b, #fa9035); } /* Naranja */
+.grad-6 { background: linear-gradient(135deg, #dfa9e6, #c586cc); } /* Lila */
+
+/* --- CONTENIDO (<figcaption>) --- */
+.card-proyecto figcaption {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que el botón siempre quede abajo */
+}
+
+.etiqueta-proyecto {
+    font-size: 0.85rem;
+    color: #95a5a6;
+    margin-bottom: 10px;
+}
+
+.card-proyecto h4 {
+    color: #1b3a5f;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.card-proyecto p:not(.etiqueta-proyecto) {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Enlaces (<a>) */
+.card-proyecto a {
+    color: #29608f; /* Azul del portafolio */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.card-proyecto a:hover {
+    color: #e67e22; /* Cambia a naranja al pasar el mouse */
+}
